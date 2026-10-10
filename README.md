@@ -150,7 +150,6 @@ La configuración está en **Settings → Pages** del repositorio.
 
 ## Pendientes
 
-- [ ] Título y "voz propia" del texto de JP en la Entrada 2.
 - [ ] Continuación del texto "Te quiero dijiste" de MM en la Entrada 3.
 - [ ] Reseñas de rock en español de MM, JP y ARP.
 - [ ] Referencia de Meza et al. (2024), citada en la Entrada 3.
