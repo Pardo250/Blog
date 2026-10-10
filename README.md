@@ -28,7 +28,7 @@ Cada entrada reúne textos cortos escritos por los integrantes del grupo a parti
 | Sección | De qué trata |
 | --- | --- |
 | **Portada** | Párrafo introductorio del blog y firmas de los autores. |
-| **Entrada 1 — Frases para empezar** | Tres citas textuales de los referentes estudiados, una por integrante. |
+| **Entrada 1 — Mucho más que un sonido** | Tres citas textuales de los referentes estudiados, una por integrante. |
 | **Pregunta de interacción** | "¿Qué canción los ha marcado? O bien, ¿cuál es su canción favorita en este momento?" |
 | **Entrada 2 — Guerra, comunidad y cerebro** | La música en la guerra (MM), la música como transformación social (JP) y el impacto de la música en el cerebro (ARP). |
 | **Entrada 3 — Entrada libre** | Música y cohesión de grupo (ARP), "Te quiero dijiste" (MM) y "Más que notas: la música como lugar de pertenencia" (JP). |
