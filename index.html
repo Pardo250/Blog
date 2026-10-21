@@ -331,6 +331,10 @@ blockquote { margin: 0; }
 .tape-body dl { margin: 0; display: grid; gap: 0.6rem; }
 .tape-body dt { color: var(--muted); }
 .tape-body dd { margin: 0.25rem 0 0; border-bottom: 1.5px dashed var(--line); height: 1.4rem; }
+.tape-body h3.filled { color: var(--fg); font-size: 2rem; }
+.tape-body .meta { color: var(--accent); margin-top: -0.5rem; }
+.tape-body > p:not(.mono) { font-size: 1rem; line-height: 1.6; }
+.tape-body .src { color: var(--muted); overflow-wrap: anywhere; }
 .reels {
   display: flex;
   justify-content: center;
@@ -545,7 +549,7 @@ blockquote { margin: 0; }
       <header class="entry-head">
         <p class="mono">Reseñas</p>
         <h2>Rock en español, en primera persona</h2>
-        <p class="lede">Cada integrante reseña una banda o un cantante de rock en español. Las reseñas se publicarán aquí.</p>
+        <p class="lede">Cada integrante reseña una banda o un cantante de rock en español.</p>
       </header>
 
       <div class="tapes">
@@ -565,12 +569,12 @@ blockquote { margin: 0; }
         <article class="tape">
           <div class="tape-top"><span class="mono">Reseña · Lado A</span><span class="sig jp">JP</span></div>
           <div class="tape-body">
-            <h3>Banda o artista por definir</h3>
-            <dl>
-              <div><dt class="mono">Disco o canción</dt><dd></dd></div>
-              <div><dt class="mono">Reseña</dt><dd></dd></div>
-            </dl>
-            <p><span class="pending">Pendiente</span></p>
+            <h3 class="filled">Enanitos Verdes</h3>
+            <p class="mono meta">Argentina · Mendoza · 1979</p>
+            <p>Es una banda argentina de rock en español originaria de Mendoza. Según el Gobierno de Mendoza, en la nota con la que despidió a su líder, la banda se formó en 1979, cuando Marciano Cantero se unió a Felipe Staiti y Daniel Piccolo. Su nombre tiene una historia curiosa: de acuerdo con el diario Los Andes, viene de un supuesto avistamiento de “enanitos verdes” en el Puente del Inca, un suceso que fue muy comentado en la prensa local y con el que el trío decidió quedarse como un guiño a su provincia.</p>
+            <p>Tras una separación en 1989, volvieron a reunirse en 1992 y Cantero siguió al frente del grupo hasta su fallecimiento en 2022. Para mí, son una de las bandas que mejor representan el rock latinoamericano.</p>
+            <p>Éxitos como “La muralla verde”, “Te vi en un tren”, “Por el resto” y “Lamento boliviano” se han convertido en himnos que siguen sonando en varias generaciones.</p>
+            <p class="mono src">Fuente: <a href="https://www.losandes.com.ar/espectaculo/el-verdadero-origen-de-los-enanitos-verdes-marcianos-en-el-camino-del-inca">Los Andes</a></p>
           </div>
           <div class="reels" aria-hidden="true"><span></span><span></span></div>
         </article>
@@ -578,12 +582,11 @@ blockquote { margin: 0; }
         <article class="tape">
           <div class="tape-top"><span class="mono">Reseña · Lado A</span><span class="sig arp">ARP</span></div>
           <div class="tape-body">
-            <h3>Banda o artista por definir</h3>
-            <dl>
-              <div><dt class="mono">Disco o canción</dt><dd></dd></div>
-              <div><dt class="mono">Reseña</dt><dd></dd></div>
-            </dl>
-            <p><span class="pending">Pendiente</span></p>
+            <h3 class="filled">Hombres G</h3>
+            <p class="mono meta">España · 1982</p>
+            <p>Es una banda española de rock y pop en español fundada por David Summers. Según Europa FM, en su publicación en honor a la banda, esta se creó en el año 1982 cuando Rafa Gutiérrez, Javier Molina y David Summers se conocieron para grabar un programa infantil navideño para la televisión. De este encuentro nació una gran amistad y la que yo considero una de las mejores bandas de rock en español de la historia.</p>
+            <p>Éxitos como “El ataque de las chicas cocodrilo”, “Devuélveme a mi chica” y “Marta tiene un marcapasos” se han convertido en himnos.</p>
+            <p class="mono src">Fuente: <a href="https://www.europafm.com/noticias/musica/historia-hombres-como-nacio-grupo-liderado-david-summers_2025033167eae968fefb4200017dff81.html">Europa FM</a></p>
           </div>
           <div class="reels" aria-hidden="true"><span></span><span></span></div>
         </article>
