@@ -307,8 +307,8 @@ blockquote { margin: 0; }
 .tape {
   background: var(--surface);
   border: 2px solid var(--fg);
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  display: flex;
+  flex-direction: column;
 }
 .tape-top {
   display: flex;
@@ -318,7 +318,7 @@ blockquote { margin: 0; }
   padding: 0.7rem 1rem;
   border-bottom: 2px solid var(--fg);
 }
-.tape-body { padding: 1.25rem 1rem; display: grid; gap: 0.9rem; align-content: start; }
+.tape-body { flex: 1; padding: 1.25rem 1rem; display: grid; gap: 0.9rem; align-content: start; }
 .tape-body h3 {
   margin: 0;
   font-family: var(--display);
@@ -334,6 +334,16 @@ blockquote { margin: 0; }
 .tape-body h3.filled { color: var(--fg); font-size: 2rem; }
 .tape-body .meta { color: var(--accent); margin-top: -0.5rem; }
 .tape-body > p:not(.mono) { font-size: 1rem; line-height: 1.6; }
+.cover { margin: 0; border-bottom: 2px solid var(--fg); background: var(--band); overflow: hidden; }
+.cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: grayscale(1) contrast(1.1);
+  transition: filter 0.3s ease, transform 0.4s ease;
+}
+.tape:hover .cover img { filter: none; transform: scale(1.03); }
+@media (prefers-reduced-motion: reduce) { .cover img { transition: none; } .tape:hover .cover img { transform: none; } }
 .tape-body .src { color: var(--muted); overflow-wrap: anywhere; }
 .reels {
   display: flex;
@@ -568,10 +578,11 @@ blockquote { margin: 0; }
 
         <article class="tape">
           <div class="tape-top"><span class="mono">Reseña · Lado A</span><span class="sig jp">JP</span></div>
+          <figure class="cover"><img src="fotos/enanitos-verdes.jpg" alt="Foto de la banda Enanitos Verdes" loading="lazy"></figure>
           <div class="tape-body">
             <h3 class="filled">Enanitos Verdes</h3>
             <p class="mono meta">Argentina · Mendoza · 1979</p>
-            <p>Es una banda argentina de rock en español originaria de Mendoza. Según el Gobierno de Mendoza, en la nota con la que despidió a su líder, la banda se formó en 1979, cuando Marciano Cantero se unió a Felipe Staiti y Daniel Piccolo. Su nombre tiene una historia curiosa: de acuerdo con el diario Los Andes, viene de un supuesto avistamiento de “enanitos verdes” en el Puente del Inca, un suceso que fue muy comentado en la prensa local y con el que el trío decidió quedarse como un guiño a su provincia.</p>
+            <p>Es una banda argentina de rock en español originaria de Mendoza. Según el Gobierno de Mendoza, en la nota con la que despidió a su líder, la banda se formó en 1979, cuando Marciano Cantero se unió a Felipe Staiti y Daniel Piccolo. Su nombre tiene una historia curiosa: viene de un supuesto avistamiento de “enanitos verdes” en el Puente del Inca, un suceso que fue muy comentado en la prensa local y con el que el trío decidió quedarse como un guiño a su provincia.</p>
             <p>Tras una separación en 1989, volvieron a reunirse en 1992 y Cantero siguió al frente del grupo hasta su fallecimiento en 2022. Para mí, son una de las bandas que mejor representan el rock latinoamericano.</p>
             <p>Éxitos como “La muralla verde”, “Te vi en un tren”, “Por el resto” y “Lamento boliviano” se han convertido en himnos que siguen sonando en varias generaciones.</p>
             <p class="mono src">Fuente: <a href="https://www.losandes.com.ar/espectaculo/el-verdadero-origen-de-los-enanitos-verdes-marcianos-en-el-camino-del-inca">Los Andes</a></p>
@@ -581,6 +592,7 @@ blockquote { margin: 0; }
 
         <article class="tape">
           <div class="tape-top"><span class="mono">Reseña · Lado A</span><span class="sig arp">ARP</span></div>
+          <figure class="cover"><img src="fotos/hombres-g.jpg" alt="Foto de la banda Hombres G" loading="lazy"></figure>
           <div class="tape-body">
             <h3 class="filled">Hombres G</h3>
             <p class="mono meta">España · 1982</p>
