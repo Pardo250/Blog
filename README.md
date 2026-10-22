@@ -32,7 +32,8 @@ Cada entrada reúne textos cortos escritos por los integrantes del grupo a parti
 | **Pregunta de interacción** | "¿Qué canción los ha marcado? O bien, ¿cuál es su canción favorita en este momento?" |
 | **Entrada 2 — Guerra, comunidad y cerebro** | La música en la guerra (MM), la música como transformación social (JP) y el impacto de la música en el cerebro (ARP). |
 | **Entrada 3 — Entrada libre** | Música y cohesión de grupo (ARP), "Te quiero dijiste" (MM) y "Más que notas: la música como lugar de pertenencia" (JP). |
-| **Reseñas** | Una reseña por integrante sobre una banda o cantante de rock en español. |
+| **Entrada 5 — Detrás de la música** | "La mujer detrás del telón", sobre Rebeca León (MM), "El volumen de la calma" (JP) y "Un sueño peligroso" (ARP). |
+| **Entrada 4 — Reseñas** | Video de reseña en YouTube y una reseña escrita por integrante: Hombres G (MM), Enanitos Verdes (JP) y Café Tacvba (ARP). |
 | **Referencias** | Bibliografía en formato APA. |
 
 ## Autores
@@ -59,7 +60,7 @@ Dentro de `index.html` el orden es:
 
 1. `<head>`: título, descripción y enlace a las tipografías.
 2. `<style>`: todos los estilos. Los colores y tipografías están definidos como variables al inicio, en el bloque `:root`.
-3. `<body>`: barra superior, portada, franja de bandas y luego una `<section>` por cada parte del blog (`#entrada-1`, `#pregunta`, `#entrada-2`, `#entrada-3`, `#resenas`, `#referencias`).
+3. `<body>`: barra superior, portada, franja de bandas y luego una `<section>` por cada parte del blog (`#entrada-1`, `#pregunta`, `#entrada-2`, `#entrada-3`, `#resenas`, `#entrada-5`, `#referencias`).
 
 ## Diseño
 

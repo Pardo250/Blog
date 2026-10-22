@@ -303,6 +303,17 @@ blockquote { margin: 0; }
 .q p { max-width: var(--measure); }
 
 /* Reseñas */
+.video { margin: 0; display: grid; gap: 0.7rem; max-width: 860px; }
+.video-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  max-width: 100%;
+  border: 2px solid var(--fg);
+  background: var(--fg);
+  box-shadow: 0.5rem 0.5rem 0 var(--accent);
+}
+.video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video figcaption { color: var(--muted); }
 .tapes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); gap: 1.5rem; }
 .tape {
   background: var(--surface);
@@ -393,7 +404,8 @@ blockquote { margin: 0; }
       <a href="#entrada-1">Entrada 1</a>
       <a href="#entrada-2">Entrada 2</a>
       <a href="#entrada-3">Entrada 3</a>
-      <a href="#resenas">Reseñas</a>
+      <a href="#resenas">Entrada 4</a>
+      <a href="#entrada-5">Entrada 5</a>
       <a href="#referencias">Referencias</a>
     </nav>
   </div>
@@ -558,10 +570,17 @@ blockquote { margin: 0; }
   <section class="entry alt" id="resenas">
     <div class="wrap">
       <header class="entry-head">
-        <p class="mono">Reseñas</p>
+        <p class="mono">Entrada 4 · Reseñas</p>
         <h2>Rock en español, en primera persona</h2>
-        <p class="lede">Cada integrante reseña una banda o un cantante de rock en español.</p>
+        <p class="lede">Cada integrante reseña una banda o un cantante de rock en español. Empieza por el video y sigue con las reseñas escritas.</p>
       </header>
+
+      <figure class="video">
+        <div class="video-frame">
+          <iframe src="https://www.youtube-nocookie.com/embed/4cPxrs7wSdA" title="Entrada 4: Reseña rock en español" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <figcaption class="mono"><a href="https://youtu.be/4cPxrs7wSdA">Ver en YouTube</a></figcaption>
+      </figure>
 
       <div class="tapes">
         <article class="tape">
@@ -606,8 +625,47 @@ blockquote { margin: 0; }
     </div>
   </section>
 
+  <!-- ENTRADA 5 -->
+  <section class="entry" id="entrada-5">
+    <div class="wrap">
+      <header class="entry-head">
+        <p class="mono">Entrada 5</p>
+        <h2>Detrás de la música</h2>
+      </header>
+
+      <article class="piece">
+        <div class="rail"><span class="sig mm">MM</span></div>
+        <div class="text">
+          <h3>La mujer detrás del telón</h3>
+          <p>Rebeca León es la CEO de Lionfish y actualmente es mánager de artistas como Anitta, Ozuna y Lunay. Rebeca nació en Miami, Estados Unidos, y es de ascendencia cubana. Estudió Historia del Arte en la Universidad de Florida y, cuando se graduó, comenzó a trabajar en Sony Music Latin, donde fue ascendiendo hasta llegar a los departamentos de Producción y Grabación. Posteriormente, pasó a trabajar en la discográfica EMI y después en AEG, donde se encargaba de organizar eventos con artistas. Finalmente, en 2017, junto con Juanes, creó su propia compañía discográfica, llamada Lionfish.</p>
+          <p>La discográfica ha trabajado e impulsado a múltiples cantantes de habla hispana, como J Balvin, Rosalía y Ricky Martin, entre otros artistas que han colaborado con Lionfish. Rebeca tiene el objetivo de crear contenidos latinos en un mundo en el que estos no tienen un sitio bien definido, permitiendo que la música viva y respire en otra dimensión. Si bien cuenta con reconocimientos internacionales, ella sigue siendo la mujer detrás del telón, y a ella debemos agradecerle por mostrarnos a estos grandes artistas.</p>
+        </div>
+      </article>
+
+      <article class="piece">
+        <div class="rail"><span class="sig jp">JP</span></div>
+        <div class="text">
+          <h3>El volumen de la calma</h3>
+          <p>Juan David es de esas personas que parecen tenerlo todo bajo control. Lo conozco desde el colegio, y la primera vez que noté su secreto fue en una semana de parciales: mientras todos estábamos al borde, entre hojas y cafés a medio tomar, él se puso los audífonos, cerró los ojos un par de minutos y volvió a sus apuntes como si hubiera regresado de otro lugar. Pensé que simplemente le importaba menos. Me equivocaba.</p>
+          <p>Con los años entendí que a él las cosas le importan, y mucho; precisamente por eso necesita la música. Una noche le pregunté por qué siempre hacía lo mismo y me respondió: “Es lo único que logra que mi cabeza baje el volumen”. Tiene una lista que lleva años construyendo, con baladas en español, jazz suave y canciones de los noventa que heredó de su papá, y guarda una canción para cada tipo de estrés, como quien tiene un remedio distinto para cada malestar.</p>
+          <p>En un mundo que nos exige rendir sin descanso, Juan David encontró una forma sana de cuidarse: no huye de los problemas, pero se da el permiso de detenerse, escuchar y volver con la mente más clara. Por eso su historia merece ser contada. No porque haya hecho algo extraordinario a los ojos de todos, sino porque convirtió algo tan cotidiano como la música en su refugio. Y verlo me ha enseñado que, a veces, la calma no se encuentra en el silencio, sino en el sonido correcto.</p>
+        </div>
+      </article>
+
+      <article class="piece">
+        <div class="rail"><span class="sig arp">ARP</span></div>
+        <div class="text">
+          <h3>Un sueño peligroso</h3>
+          <p>Matías es un estudiante de primer semestre de música. Lo conocí varios años atrás, antes de que decidiera un camino como aquel. Cuando por primera vez hablamos, recuerdo que lo que más destacaba de él era su sencillez y su silencio; sacarle una risa no siempre era tarea fácil. Eso podría hacer que ahora parezca curiosa su elección de carrera. Los músicos, y en especial los profesionales, destacan más bien por su actitud extrovertida, ruidosa y creativa hoy en día.</p>
+          <p>La pregunta nació por sí sola entonces. Al justificar su elección, Matías volvió a su pasado; a unas clases de piano que a veces aburrían y a veces eran lo mejor de la semana, a ese anhelo que tuvo de tener una guitarra propia, de la emoción que latía en él cuando se escuchó tocando su canción favorita. En un mundo donde ningún futuro está realmente asegurado, donde la inteligencia artificial nos respira en la nuca, Matías sabía que había algo que se le daba bien, para lo que tenía la suficiente paciencia, el suficiente cariño. Y eso era la música, aun con todo y la ‘poca’ estrella de rock que era.</p>
+          <p>Creo que esa es la historia de la música de hoy. Una que vive bajo la dura mirada de la sociedad, en donde soñar con dedicar la vida a ello es cada vez más peligroso.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
   <!-- REFERENCIAS -->
-  <section class="entry" id="referencias">
+  <section class="entry alt" id="referencias">
     <div class="wrap">
       <header class="entry-head">
         <p class="mono">Referencias</p>
@@ -616,6 +674,7 @@ blockquote { margin: 0; }
       <ul class="refs">
         <li>Fernández Ampié, G. (2024). Música en la guerra: los mensajes de las canciones “contras.” <em>Meridional: Revista Chilena de Estudios Latinoamericanos, 23</em>, 205–234. <a href="https://doi.org/10.5354/0719-4862.2024.76349">https://doi.org/10.5354/0719-4862.2024.76349</a></li>
         <li>Lara Figueroa, E. (2025). El poder transformador de la música en niños y jóvenes: La práctica musical grupal como agente de cambio. <em>AULA Revista de Humanidades y Ciencias Sociales, 72</em>(1), (5). <a href="https://doi.org/10.33413/aulahcs.2025.71i1.396">https://doi.org/10.33413/aulahcs.2025.71i1.396</a></li>
+        <li>Rebeca León. (2025, 16 de julio). En <em>Wikipedia</em>. <a href="https://es.wikipedia.org/w/index.php?title=Rebeca_Le%C3%B3n&amp;oldid=168500977">https://es.wikipedia.org/w/index.php?title=Rebeca_Le%C3%B3n&amp;oldid=168500977</a></li>
         <li>Solís, K. S., y Torres, S. P. (2025). Impactos de la música electrónica en el cerebro joven. <em>Revista Paraguaya de Educación, 14</em>(2), 141-154.</li>
       </ul>
     </div>
