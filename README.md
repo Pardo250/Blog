@@ -151,7 +151,6 @@ La configuración está en **Settings → Pages** del repositorio.
 
 ## Pendientes
 
-- [ ] Referencia de Meza et al. (2024), citada en la Entrada 3.
 - [ ] Imágenes para la portada, las entradas y las reseñas.
 - [ ] Entradas restantes.
 
