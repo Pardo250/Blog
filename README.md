@@ -150,7 +150,6 @@ La configuración está en **Settings → Pages** del repositorio.
 
 ## Pendientes
 
-- [ ] Reseñas de rock en español de MM, JP y ARP.
 - [ ] Referencia de Meza et al. (2024), citada en la Entrada 3.
 - [ ] Imágenes para la portada, las entradas y las reseñas.
 - [ ] Entradas restantes.
